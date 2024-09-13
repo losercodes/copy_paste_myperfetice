@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>My-Perfectice Answer Automation</title>
+    <style>
+        body {
+            height: 300px;
+            width: 300px;
+            background: linear-gradient(135deg, #2e2f31, #f8f9fa);
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #649ce0;
+            color: white;
+            padding: 10px 15px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .left-text {
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .right-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .right-icons > div {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .right-icons > div:last-child {
+            margin-right: 0;
+        }
+
+        .right-icons i {
+            font-size: 20px;
+            color: white;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .right-icons i:hover {
+            color: #ffcc00;
+            transform: scale(1.2);
+        }
+
+        .instructions {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            padding: 0 10px;
+        }
+
+        .instructions h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #649ce0;
+        }
+
+        .instructions ol {
+            text-align: left;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        ol li i {
+            color: #649ce0;
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #649ce0;
+            color: white;
+            border: none;
+            padding: 7px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 13px;
+        }
+
+        button:hover {
+            background-color: #4d80c3;
+        }
+
+        .footer {
+            font-size: 18px;
+            color: #666;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="left-text">MyPerfectice</div>
+        <div class="right-icons">
+            <div id="github"><i class="fab fa-github"></i></div>
+            <div id="tele"><i class="fab fa-telegram"></i></div>
+            <div id="youtube"><i class="fab fa-youtube"></i></div>
+            <div id="insta"><i class="fab fa-instagram"></i></div>
+        </div>
+    </div>
+
+    <!-- Instructions -->
+    <div class="instructions">
+        <h3>Myperfectice Copy Paste Extension</h3>
+        <ol>
+            <li><i class="fas fa-check-circle"></i>Fucked code</li>
+            <li><i class="fas fa-check-circle"></i>Click Altr+p for copy question </li>
+            <li><i class="fas fa-check-circle"></i>click Altr+g for paste Answer</li>
+            <li><i class="fas fa-check-circle"></i>Extension Developed By Ani 💀</li>
+
+        </ol>
+        <button id="watch">Watch Tutorial</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+       ❤️ Developed by AMN | 09/09/24
+    </div>
+
+    <script src="./popup.js"></script>
+</body>
+</html>

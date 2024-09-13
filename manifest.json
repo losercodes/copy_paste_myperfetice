@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "MyPerfectice Coding Copy Paste",
+    "version": "1.0",
+    "description": "Copy Paste coding question in 1 click",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "action": {
+        "default_popup": "./popup.html",
+        "default_icon": {
+            "16": "./images/ayush.jpeg",
+            "48": "./images/ayush.jpeg",
+            "128": "./images/ayush.jpeg"
+        }
+    },
+    "icons": {
+        "16": "./images/ayush.jpeg",
+        "48": "./images/ayush.jpeg",
+        "128": "./images/ayush.jpeg"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["./content.js"]
+        }
+    ]
+}
